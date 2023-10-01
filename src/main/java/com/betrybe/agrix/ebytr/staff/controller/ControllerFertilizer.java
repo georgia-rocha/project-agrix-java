@@ -67,6 +67,6 @@ public class ControllerFertilizer {
             fertilizer.get().getBrand(),
             fertilizer.get().getComposition()
     );
-    return ResponseEntity.ok(fertilizerDtos);
+    return ResponseEntity.status(HttpStatus.CREATED).body(fertilizerDtos);
   }
 }
