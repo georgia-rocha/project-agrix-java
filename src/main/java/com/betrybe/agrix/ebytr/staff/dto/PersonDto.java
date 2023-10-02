@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public record PersonDto(
       Long id,
       String username,
-      @JsonIgnore String password,
+      String password,
       Role role
 ) {
   /**

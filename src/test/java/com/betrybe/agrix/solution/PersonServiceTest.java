@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import org.springframework.security.core.userdetails.UserDetails;
+
 import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -50,9 +52,9 @@ public class PersonServiceTest {
     String username = "testUser";
     Person expectedPerson = new Person();
     expectedPerson.setUsername(username);
-    Mockito.when(personRepository.findByUsername(username)).thenReturn(Optional.of(expectedPerson));
+    Mockito.when(personRepository.findByUsername(username)).thenReturn(expectedPerson);
 
-    Person actualPerson = personService.getPersonByUsername(username);
+    UserDetails actualPerson = personService.loadUserByUsername(username);
 
     assertEquals(expectedPerson, actualPerson);
   }
@@ -60,9 +62,9 @@ public class PersonServiceTest {
   @Test
   public void testGetPersonByUsername_PersonNotFound_ThrowsException() {
     String username = "nonExistingUser";
-    Mockito.when(personRepository.findByUsername(username)).thenReturn(Optional.empty());
+    Mockito.when(personRepository.findByUsername(username)).thenReturn(null);
 
-    assertThrows(PersonNotFoundException.class, () -> personService.getPersonByUsername(username));
+    assertThrows(PersonNotFoundException.class, () -> personService.loadUserByUsername(username));
   }
 
   @Test
