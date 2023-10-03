@@ -12,6 +12,9 @@ public record PersonDto(
       String password,
       Role role
 ) {
+  /**
+  * Entity de Person.
+  */
   public Person toEntity() {
     Person person = new Person();
 

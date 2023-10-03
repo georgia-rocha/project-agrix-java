@@ -3,11 +3,17 @@ package com.betrybe.agrix.ebytr.staff.util;
 import com.betrybe.agrix.ebytr.staff.entity.Person;
 import com.betrybe.agrix.ebytr.staff.security.Role;
 
+/**
+  * Class PersonResponse.
+  */
 public class PersonResponse {
   private Long id;
   private String username;
   private Role role;
 
+  /**
+  * Constructor PersonResponse.
+  */
   public PersonResponse(Person person) {
     this.id = person.getId();
     this.username = person.getUsername();
