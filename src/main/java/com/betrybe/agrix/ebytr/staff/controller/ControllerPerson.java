@@ -3,6 +3,7 @@ package com.betrybe.agrix.ebytr.staff.controller;
 import com.betrybe.agrix.ebytr.staff.dto.PersonDto;
 import com.betrybe.agrix.ebytr.staff.entity.Person;
 import com.betrybe.agrix.ebytr.staff.service.PersonService;
+import com.betrybe.agrix.ebytr.staff.util.PersonResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,16 +29,18 @@ public class ControllerPerson {
   * POST.
   */
   @PostMapping()
-  public ResponseEntity<PersonDto> createNewPerson(@RequestBody PersonDto personDto) {
+  public ResponseEntity<PersonResponse> createNewPerson(@RequestBody PersonDto personDto) {
     Person person = personDto.toEntity();
     Person newPerson = personService.create(person);
 
-    PersonDto p = new PersonDto(
-        newPerson.getId(),
-        newPerson.getUsername(),
-        newPerson.getPassword(),
-        newPerson.getRole()
-     );
-    return ResponseEntity.status(HttpStatus.CREATED).body(p);
+//    PersonDto p = new PersonDto(
+//        newPerson.getId(),
+//        newPerson.getUsername(),
+//        newPerson.getPassword(),
+//        newPerson.getRole()
+//    );
+
+    PersonResponse personResponse = new PersonResponse(newPerson);
+    return ResponseEntity.status(HttpStatus.CREATED).body(personResponse);
   }
 }
