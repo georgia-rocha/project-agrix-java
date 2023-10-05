@@ -66,6 +66,12 @@
       <scope>runtime</scope>
     </dependency>
 
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.6.0</version>
+    </dependency>
+
     <!-- simplifica o uso do Spring Data JPA para acesso a banco de dados em aplicativos Spring Boot. -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
