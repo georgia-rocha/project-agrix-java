@@ -8,7 +8,7 @@ O projeto Agrix é iniciado do zero ao deploy. É um sistema que permite a gest�
 
 ### Considerações Pessoais
 
-Este projeto foi a minha conclusão do curso na Trybe, no módulo de eletriva de Java. Durante este módulo, adquiri os conhecimentos necessários para concluir o projeto com 100% de aproveitamento. No início, enfrentei algumas dificuldades, mas posteriormente percebi que havia algumas semelhanças com TypeScript, o que me permitiu compreender melhor e me adaptar. Inicialmente, tentei programar no Eclipse, mas não consegui me familiarizar com ele. Por orientação de um mentor da Trybe, optei pelo IntelliJ, o que teve um impacto significativo no meu desempenho, já que descobri que é uma ferramenta bastante prática, especialmente para rodar os testes.
+Este projeto foi a minha conclusão do curso na Trybe, no módulo de eletiva de Java. Durante este módulo, adquiri os conhecimentos necessários para concluir o projeto com 100% de aproveitamento. No início, enfrentei algumas dificuldades, mas posteriormente percebi que havia algumas semelhanças com TypeScript, o que me permitiu compreender melhor e me adaptar. Inicialmente, tentei programar no Eclipse, mas não consegui me familiarizar com ele. Por orientação de um mentor da Trybe, optei pelo IntelliJ, o que teve um impacto significativo no meu desempenho, já que descobri que é uma ferramenta bastante prática, especialmente para rodar os testes.
 
 ## Funcionalidades
 
@@ -310,7 +310,7 @@ Exemplo de resposta para a rota `/crops/3` (supondo que exista uma plantação c
 
 </details>
 
-### 8. Criei um Dockerfile para sua aplicação
+### 8. Criei um Dockerfile para a aplicação
 
 ## Fase B
 
