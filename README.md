@@ -28,7 +28,7 @@ Este projeto foi a minha conclusão do curso na Trybe, no módulo de eletriva de
 - [Checkstyle](https://checkstyle.sourceforge.io/)
 - [MySQL](https://dev.mysql.com/doc/)
   
-<summary><strong>Para clonar e testar 👩‍🎓 </strong></summary><br />
+<details><summary><strong>Para clonar e testar 👩‍🎓 </strong></summary><br />
 
   obs: Para instalar as depedências e rodar o projeto é necessário ter instalado na sua máquina o Java e o Maven!
 
@@ -49,6 +49,8 @@ Este projeto foi a minha conclusão do curso na Trybe, no módulo de eletriva de
 - testes por classe
   * `mvn test -Dtest="TestClassName"`
 
+</details>
+  
 <details>
 <summary><strong>🎛 Checkstyle</strong></summary>
 
