@@ -71,7 +71,7 @@ seu terminal. Se não houver problema no código, nada será impresso no seu ter
 <details>
 <summary><strong>Relações das Tabelas 📑 </strong></summary>
   
-  ![Modelo de tabelas](images/agrix-tabelas-fase-a-1.png)
+  ![Modelo de tabelas](agrix-tabelas-fase-a-1.png)
   
 Temos as seguintes tabelas:
 - `farm`: representa uma fazenda
