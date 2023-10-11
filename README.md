@@ -26,7 +26,7 @@ Este projeto foi a minha conclusão do curso na Trybe, no módulo de eletiva de 
 - [IntelliJ](https://www.jetbrains.com/idea/download/)
 - [Maven](https://maven.apache.org/)
 - [Checkstyle](https://checkstyle.sourceforge.io/)
-- [MySQL](https://dev.mysql.com/doc/)
+- [PostgreSQL](https://www.postgresql.org/docs/)
   
 <details><summary><strong>Para clonar e testar 👩‍🎓 </strong></summary><br />
 
